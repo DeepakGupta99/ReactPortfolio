@@ -16,7 +16,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title:       'Tata Digital - Resource Management',
+    title:       'Resource Management and Time - Tracking',
     status:      'Completed',
     description:
       'Tata Digital – Resource Management is a web-based workforce and resource management application designed to manage resources, projects, vendors, departments, tasks, and organizational hierarchies through multi-level mapping. I developed resource onboarding and offboarding workflows with manager approval processes, along with timesheet and calendar modules for daily effort tracking. The system also includes automated utilities that generate and email periodic Excel reports containing resource allocation, project mapping, and utilization details.',
@@ -27,7 +27,7 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title:       'Tata Capital - Document Movement Tracking System',
+    title:       'Document Movement Tracking System',
     status:      'Completed',
     description:
       'Tata Capital – Document Movement Tracking System (DMTS) is a web-based application designed to track the complete lifecycle of physical documents across branches, storage centers, and writers. I developed modules for bulk data uploads, barcode generation, POD creation and tracking, transaction history management, and integrations with courier services such as Blue Dart. The system enables end-to-end document movement tracking, automated utilities, and operational monitoring while ensuring visibility and accountability at every stage of the workflow.',
