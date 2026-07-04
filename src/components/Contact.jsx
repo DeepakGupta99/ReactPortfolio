@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 /* ── Replace these with your real details ── */
 const CONTACT_INFO = {
@@ -44,9 +45,39 @@ const Contact = () => {
       - Formspree (https://formspree.io/)
       - or your own backend API
     */
-    console.log('Form submitted:', form);
-    setSent(true);
-    setTimeout(() => { setSent(false); setForm({ name: '', email: '', message: '' }); }, 3000);
+
+      emailjs
+    .send(
+      'service_o7upui6',
+      'template_7n5m8bp',
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      },
+      'vQfyjX_QdDGUNEwkc'
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        setSent(true);
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+
+        setTimeout(() => setSent(false), 3000);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    // console.log('Form submitted:', form);
+    // setSent(true);
+    // setTimeout(() => { setSent(false); setForm({ name: '', email: '', message: '' }); }, 3000);
   };
 
   return (

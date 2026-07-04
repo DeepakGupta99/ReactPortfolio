@@ -4,8 +4,9 @@ import './About.css';
 const SKILLS = [
   { category: 'Frontend',  items: ['React.js', 'Angular', 'JavaScript (ES6+)', 'TypeScript', 'JQuery', 'HTML5 / CSS3'] },
   { category: 'Backend',   items: ['ASP.NET Core', '.NET MVC', 'C#', 'REST APIs', 'GraphQL'] },
-  { category: 'Database',  items: ['MySQL', 'SQL'] },
   { category: 'Tools',     items: ['Git / GitHub', 'Docker', 'Postman', 'VS Code', 'Visual Studio', 'IIS Hosting'] },
+  { category: 'Database',  items: ['MySQL', 'SQL'] },
+  { category: 'Others',     items: ['CI /CD', 'Kubernetes', 'Git Actions'] },
 ];
 
 const STATS = [
